@@ -1,0 +1,191 @@
+{
+  "seed": 20260805,
+  "corpus": "/Users/chia-wei.lin/Library/CloudStorage/GoogleDrive-ailourosmarjara0417@gmail.com/Mon Drive/UnilProgrammingproject Tangut Gloss_TangPACLIC/local_paclic_2026_tangsyn_TangPACLIC/data/text",
+  "corpus_files_sha256": {
+    "beaudouin_these.txt": "db433bbece6705e96c8ecef955be19e3a7fc921eaaefdd8cb19c8408ac1e3c66",
+    "biography_atiśa.txt": "ba68d8d936e3f0f2d80b93a799d402af6f60419510082e1127aa19dc8907e297",
+    "bodhicaryavatara_1-4.txt": "0e9492c4b858d51f0d02808cc8157e9088a7330eb6dc628c7c81d860897f8d52",
+    "bodhicaryavatara_5_8.txt": "7a66a1f42f7fad4250c04a3a6cc879fdc9b5008233b548290180b5f1af4d1291",
+    "saptaguṇvarṇanā_parikathā.txt": "fee8dcc30b0bace09ddf4fba0d764c129183337d297e230a9cfae66197b413dc",
+    "tai_tangut_tibetan.txt": "5376c43f24ced523188e223ac7166a6c837556b77090ace35a616410aaf56fae",
+    "tangut_legal_texts.txt": "ee3e44ff4f195def65ad8c7ef626292c26363dae934f89eda3f8faf24c232248",
+    "佛為海龍王說法印經.txt": "e634dbd11689f732bb828ef64e3d680decd3fad1ef393bc42cc3638922905fae",
+    "佛說瞻婆比丘經.txt": "0d2357656aa4c0798687c9b674f0728e25194aa1b128c16e08d8603fe8c74e72",
+    "佛說金耀童子經.txt": "01c55a066b1257fcf0f217a34e3abae8d94d06d6bb41efdd4971cbe5ce143c27",
+    "修華嚴奧旨妄盡還源觀.txt": "7633939668ae05e368d0a892cb03e1b222c762e564d3ab300c62ee68091ed503",
+    "八千頌般若經增上慢品.txt": "d652f4ae93c92ef6d23b4d7915e94b77fb6927189d457ceac4df4e827e7776cf",
+    "十二國.txt": "9220624b95d417f41f1a2daee6d200a59fddddf39dd3ad27f4aae3478360942e",
+    "天盛律令節親門.txt": "9b8f6752c329d0f411f4a86293fcbab5ace6c805661eb6cc528a70254fe62744",
+    "妙法蓮華心經.txt": "17e6094fb17ba120b6cb904f296327aa4578bd53758785a0c62684aa42be51a1",
+    "妙法蓮華經.txt": "d272dead28bf109a9fe61ceef31dd3b913e4836a8d3c076f2f5a689ef870fe5b",
+    "孫子兵法三家注.txt": "48d8c24304c4898735124deed7cf5845a49b2815567f986d0ecab3e0f7f9c3c2",
+    "彌勒上生經御製發願文.txt": "11c49fb897f1e32e65b2bc4de40cd1c50421a0774ca61e68bcfdb04e3c6d235c",
+    "志公大師十二時歌注解.txt": "8b5b47bd1f4f105b508adda474eab0b04fca80d3bb366779e5b59cbaec888925",
+    "慈孝傳.txt": "d369319707f6bbba42d6e5180f36d833a791143ac70b8170344dde2fbb602f47",
+    "慈悲道場懺法.txt": "5693cf15bc198197bc0c6867fe4b8d778c91b744dd6013738253dd84ed396bef",
+    "慈悲道場懺法序.txt": "9ddb3772d28345eef6c1eedbbabda847258dc62605434886814bb8508f8132e8",
+    "拔濟苦難陀羅尼經.txt": "0246e2bfc2a86033a9be9acff7315a270a008437ed3f82d4c43dabbb32c6e5a5",
+    "維摩詰經.txt": "f164727e5d763be0dd5975d3408aa1c1d070fa78c813f7de9906c49126399b3a",
+    "聖六字增壽大明陀羅尼經.txt": "64faf5020cf40bce9b18edee6618f9c36cd9ff5db4e484c6c2b63ae6a926794d",
+    "華嚴經.txt": "d8e5b9f689987755364d5ab64f1234d238641459e8454d835c6719e5374d187e",
+    "論語.txt": "89eecc91f4aca8f8e4c47120e53f8e128ac92590ec4c906978b3208a77b0b8cc",
+    "貞觀政要.txt": "4701dd1496dc479f0f7af383972e5eccc2e2ec804c089571d17419cff66e80cf",
+    "類林.txt": "8e507b57da4908f960b766441889179044c821d505f49f8e1b5b46702671be51"
+  },
+  "tangut_sources": {
+    "path": "/Users/chia-wei.lin/Library/CloudStorage/GoogleDrive-ailourosmarjara0417@gmail.com/Mon Drive/UnilProgrammingproject Tangut Gloss_TangPACLIC/local_paclic_2026_tangsyn_TangPACLIC/data/TangutSources.txt",
+    "sha256": "4f5079d81395cc5e7264b1b05a6edb157e0451323e2c7cfabfe09c349e65df02"
+  },
+  "min_chars": 4,
+  "max_chars": 18,
+  "keep_punctuation": true,
+  "deduplicate": true,
+  "layouts": [
+    "horizontal",
+    "vertical"
+  ],
+  "tiers": [
+    "clean",
+    "light",
+    "medium",
+    "heavy"
+  ],
+  "tier_weights": {
+    "clean": 0.4,
+    "light": 0.25,
+    "medium": 0.2,
+    "heavy": 0.15
+  },
+  "test_tier_policy": "balanced",
+  "split_by": "random",
+  "ratios": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "holdout_fonts": [],
+  "fonts_per_line": 1,
+  "test_font_policy": "paired",
+  "candidate_lines": 8712,
+  "rendered_lines": 8612,
+  "skipped_no_font": 0,
+  "skipped_incomplete_font_pair": 100,
+  "render": {
+    "line_px": 64,
+    "cell_ratio": 1.0,
+    "jitter_ratio": 0.02,
+    "size_jitter_ratio": 0.02,
+    "supersample": 3,
+    "pad_to": null
+  },
+  "fonts": {
+    "train": [
+      {
+        "name": "mojikyo-tangut-1-1",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Mojikyo Tangut 1.1.ttf",
+        "sha256": "1673677ddc10ac6d69ba348c365f32651a1d51cfc68e5131ceb8c4cfe162c00b",
+        "repaired": false
+      },
+      {
+        "name": "new-tangut-std-v2-008",
+        "path": "/Users/chia-wei.lin/Library/Fonts/new Tangut Std V2.008.ttf",
+        "sha256": "94ff939bbc70ebd63796ba7b52b41016854450a3d5e8fddc160d31e6a65714f2",
+        "repaired": false
+      },
+      {
+        "name": "notoseriftangut-regular",
+        "path": "/Users/chia-wei.lin/Library/Fonts/NotoSerifTangut-Regular.ttf",
+        "sha256": "60b5f263ac0265157b6955756b52e55031d94663f5b5287fc03d90e9b7d0370b",
+        "repaired": false
+      },
+      {
+        "name": "tangut-n4694-v3-10",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut N4694 V3.10.ttf",
+        "sha256": "a7a63fa8c246c1aebcad2727e813e61e40682c829f823ed431e12745604fdb9e",
+        "repaired": false
+      },
+      {
+        "name": "tangut-twu-regular-v1-007",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut TWU Regular V1.007.ttf",
+        "sha256": "b88b4865482243b99b97703f380b4fff913552d62ddc761997367b99d74a5921",
+        "repaired": false
+      }
+    ],
+    "val": [
+      {
+        "name": "mojikyo-tangut-1-1",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Mojikyo Tangut 1.1.ttf",
+        "sha256": "1673677ddc10ac6d69ba348c365f32651a1d51cfc68e5131ceb8c4cfe162c00b",
+        "repaired": false
+      },
+      {
+        "name": "new-tangut-std-v2-008",
+        "path": "/Users/chia-wei.lin/Library/Fonts/new Tangut Std V2.008.ttf",
+        "sha256": "94ff939bbc70ebd63796ba7b52b41016854450a3d5e8fddc160d31e6a65714f2",
+        "repaired": false
+      },
+      {
+        "name": "notoseriftangut-regular",
+        "path": "/Users/chia-wei.lin/Library/Fonts/NotoSerifTangut-Regular.ttf",
+        "sha256": "60b5f263ac0265157b6955756b52e55031d94663f5b5287fc03d90e9b7d0370b",
+        "repaired": false
+      },
+      {
+        "name": "tangut-n4694-v3-10",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut N4694 V3.10.ttf",
+        "sha256": "a7a63fa8c246c1aebcad2727e813e61e40682c829f823ed431e12745604fdb9e",
+        "repaired": false
+      },
+      {
+        "name": "tangut-twu-regular-v1-007",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut TWU Regular V1.007.ttf",
+        "sha256": "b88b4865482243b99b97703f380b4fff913552d62ddc761997367b99d74a5921",
+        "repaired": false
+      }
+    ],
+    "test": [
+      {
+        "name": "mojikyo-tangut-1-1",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Mojikyo Tangut 1.1.ttf",
+        "sha256": "1673677ddc10ac6d69ba348c365f32651a1d51cfc68e5131ceb8c4cfe162c00b",
+        "repaired": false
+      },
+      {
+        "name": "new-tangut-std-v2-008",
+        "path": "/Users/chia-wei.lin/Library/Fonts/new Tangut Std V2.008.ttf",
+        "sha256": "94ff939bbc70ebd63796ba7b52b41016854450a3d5e8fddc160d31e6a65714f2",
+        "repaired": false
+      },
+      {
+        "name": "notoseriftangut-regular",
+        "path": "/Users/chia-wei.lin/Library/Fonts/NotoSerifTangut-Regular.ttf",
+        "sha256": "60b5f263ac0265157b6955756b52e55031d94663f5b5287fc03d90e9b7d0370b",
+        "repaired": false
+      },
+      {
+        "name": "tangut-n4694-v3-10",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut N4694 V3.10.ttf",
+        "sha256": "a7a63fa8c246c1aebcad2727e813e61e40682c829f823ed431e12745604fdb9e",
+        "repaired": false
+      },
+      {
+        "name": "tangut-twu-regular-v1-007",
+        "path": "/Users/chia-wei.lin/Library/Fonts/Tangut TWU Regular V1.007.ttf",
+        "sha256": "b88b4865482243b99b97703f380b4fff913552d62ddc761997367b99d74a5921",
+        "repaired": false
+      }
+    ]
+  },
+  "code_sha256": {
+    "build_dataset.py": "58e17fc89d7cbd2c4e100dc46cf21817ddbc943016179550bccd0b7771ceee79",
+    "tangutocr/__init__.py": "4cf6d9910a0cd83f564d3e06cf80bcfec7a99f4999c0d0e4abaa0a71b381c629",
+    "tangutocr/corpus.py": "3dfeb5f56052b65497784a9c55537ee8ed207eb8c34c1b43037a28796bbf939d",
+    "tangutocr/degrade.py": "b8e6621b3fc720f18e1f5d295a59af933dda5f39e429d33c0dde39bf980c9ff7",
+    "tangutocr/fonts.py": "161bba8718c6fa2227d8da97e007dfde5aff3750552d90199f26c0efe4f29c98",
+    "tangutocr/inventory.py": "c2646d2dace0c215dc5ec3c57263b23cd3983657e3a3e83e68990e9acc08b4f2",
+    "tangutocr/labels.py": "d3d1094a0c67f9093b7bc3f3d1f1cd71e8af2d71f7fdccfc9c70353d198a6f5c",
+    "tangutocr/render.py": "8ac2cd624a8b1fae8786499ba156932cca3d7b7431b371ccf4cad495752976b1",
+    "tangutocr/splits.py": "60e6d8167d6d19b1ca1dccfd1f0934d987af7e0eae3fa2ef6d81e0ce9ab692f6"
+  },
+  "line_limit": null
+}

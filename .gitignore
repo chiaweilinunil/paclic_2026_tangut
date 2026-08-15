@@ -1,0 +1,26 @@
+# --- Generated dataset -------------------------------------------------
+# ~24k synthetic renderings (~600 MB). Regenerate from dataset/build_config.json.
+dataset/images/
+dataset/lines.jsonl
+dataset/**/metadata.jsonl
+
+# --- Model artifacts ---------------------------------------------------
+models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# --- Python ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+
+# --- macOS / Google Drive ----------------------------------------------
+.DS_Store
+Icon?
+*.icloud

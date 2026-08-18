@@ -1,0 +1,429 @@
+{
+  "input": {
+    "expected": 7800,
+    "matched": 7800,
+    "missing": 0,
+    "unmatched": 0,
+    "allow_partial": false
+  },
+  "overall": {
+    "n": 7800,
+    "cer": 0.12395653010194269,
+    "substitutions": 12723,
+    "deletions": 138,
+    "insertions": 28,
+    "reference_characters": 103980,
+    "punctuation_stripped_cer": 0.12771120431396046,
+    "exact": 0.48615384615384616
+  },
+  "by": {
+    "tier": {
+      "light": {
+        "n": 1950,
+        "cer": 0.0451252408477842,
+        "substitutions": 1162,
+        "deletions": 5,
+        "insertions": 4,
+        "reference_characters": 25950,
+        "punctuation_stripped_cer": 0.04685874349739896,
+        "exact": 0.6071794871794872
+      },
+      "clean": {
+        "n": 1950,
+        "cer": 0.031593090211132435,
+        "substitutions": 818,
+        "deletions": 4,
+        "insertions": 1,
+        "reference_characters": 26050,
+        "punctuation_stripped_cer": 0.03281499202551834,
+        "exact": 0.6907692307692308
+      },
+      "medium": {
+        "n": 1950,
+        "cer": 0.06743827160493827,
+        "substitutions": 1741,
+        "deletions": 2,
+        "insertions": 5,
+        "reference_characters": 25920,
+        "punctuation_stripped_cer": 0.06949760765550239,
+        "exact": 0.5374358974358975
+      },
+      "heavy": {
+        "n": 1950,
+        "cer": 0.3509976976208749,
+        "substitutions": 9002,
+        "deletions": 127,
+        "insertions": 18,
+        "reference_characters": 26060,
+        "punctuation_stripped_cer": 0.3622248899559824,
+        "exact": 0.10923076923076923
+      }
+    },
+    "layout": {
+      "horizontal": {
+        "n": 3900,
+        "cer": 0.11969609540296211,
+        "substitutions": 6159,
+        "deletions": 51,
+        "insertions": 13,
+        "reference_characters": 51990,
+        "punctuation_stripped_cer": 0.12334731376073498,
+        "exact": 0.4958974358974359
+      },
+      "vertical": {
+        "n": 3900,
+        "cer": 0.12821696480092326,
+        "substitutions": 6564,
+        "deletions": 87,
+        "insertions": 15,
+        "reference_characters": 51990,
+        "punctuation_stripped_cer": 0.13207509486718594,
+        "exact": 0.4764102564102564
+      }
+    },
+    "font": {
+      "mojikyo-tangut-1-1": {
+        "n": 1560,
+        "cer": 0.12997691863819966,
+        "substitutions": 2651,
+        "deletions": 48,
+        "insertions": 4,
+        "reference_characters": 20796,
+        "punctuation_stripped_cer": 0.13366287197922908,
+        "exact": 0.49935897435897436
+      },
+      "new-tangut-std-v2-008": {
+        "n": 1560,
+        "cer": 0.08958453548759376,
+        "substitutions": 1839,
+        "deletions": 14,
+        "insertions": 10,
+        "reference_characters": 20796,
+        "punctuation_stripped_cer": 0.0920211703614939,
+        "exact": 0.533974358974359
+      },
+      "notoseriftangut-regular": {
+        "n": 1560,
+        "cer": 0.09073860357761108,
+        "substitutions": 1879,
+        "deletions": 5,
+        "insertions": 3,
+        "reference_characters": 20796,
+        "punctuation_stripped_cer": 0.09356900339524665,
+        "exact": 0.5403846153846154
+      },
+      "tangut-n4694-v3-10": {
+        "n": 1560,
+        "cer": 0.11030967493748797,
+        "substitutions": 2260,
+        "deletions": 26,
+        "insertions": 8,
+        "reference_characters": 20796,
+        "punctuation_stripped_cer": 0.11359097263830636,
+        "exact": 0.5429487179487179
+      },
+      "tangut-twu-regular-v1-007": {
+        "n": 1560,
+        "cer": 0.19917291786882094,
+        "substitutions": 4094,
+        "deletions": 45,
+        "insertions": 3,
+        "reference_characters": 20796,
+        "punctuation_stripped_cer": 0.20571200319552627,
+        "exact": 0.3141025641025641
+      }
+    },
+    "doc": {
+      "beaudouin_these": {
+        "n": 520,
+        "cer": 0.12641165755919853,
+        "substitutions": 685,
+        "deletions": 8,
+        "insertions": 1,
+        "reference_characters": 5490,
+        "punctuation_stripped_cer": 0.12641165755919853,
+        "exact": 0.5461538461538461
+      },
+      "biography_atiśa": {
+        "n": 120,
+        "cer": 0.17105263157894737,
+        "substitutions": 254,
+        "deletions": 6,
+        "insertions": 0,
+        "reference_characters": 1520,
+        "punctuation_stripped_cer": 0.18214285714285713,
+        "exact": 0.375
+      },
+      "bodhicaryavatara_1-4": {
+        "n": 320,
+        "cer": 0.10690423162583519,
+        "substitutions": 475,
+        "deletions": 4,
+        "insertions": 1,
+        "reference_characters": 4490,
+        "punctuation_stripped_cer": 0.10690423162583519,
+        "exact": 0.5625
+      },
+      "bodhicaryavatara_5_8": {
+        "n": 800,
+        "cer": 0.12030075187969924,
+        "substitutions": 1271,
+        "deletions": 7,
+        "insertions": 2,
+        "reference_characters": 10640,
+        "punctuation_stripped_cer": 0.12020676691729323,
+        "exact": 0.49
+      },
+      "saptaguṇvarṇanā_parikathā": {
+        "n": 40,
+        "cer": 0.13877551020408163,
+        "substitutions": 67,
+        "deletions": 1,
+        "insertions": 0,
+        "reference_characters": 490,
+        "punctuation_stripped_cer": 0.13877551020408163,
+        "exact": 0.325
+      },
+      "tai_tangut_tibetan": {
+        "n": 190,
+        "cer": 0.15767441860465117,
+        "substitutions": 338,
+        "deletions": 1,
+        "insertions": 0,
+        "reference_characters": 2150,
+        "punctuation_stripped_cer": 0.15767441860465117,
+        "exact": 0.4052631578947368
+      },
+      "tangut_legal_texts": {
+        "n": 440,
+        "cer": 0.14849023090586147,
+        "substitutions": 826,
+        "deletions": 7,
+        "insertions": 3,
+        "reference_characters": 5630,
+        "punctuation_stripped_cer": 0.14849023090586147,
+        "exact": 0.42954545454545456
+      },
+      "佛為海龍王說法印經": {
+        "n": 20,
+        "cer": 0.025,
+        "substitutions": 5,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 200,
+        "punctuation_stripped_cer": 0.025,
+        "exact": 0.85
+      },
+      "佛說瞻婆比丘經": {
+        "n": 60,
+        "cer": 0.10957446808510639,
+        "substitutions": 102,
+        "deletions": 1,
+        "insertions": 0,
+        "reference_characters": 940,
+        "punctuation_stripped_cer": 0.11363636363636363,
+        "exact": 0.4666666666666667
+      },
+      "佛說金耀童子經": {
+        "n": 60,
+        "cer": 0.1407766990291262,
+        "substitutions": 144,
+        "deletions": 1,
+        "insertions": 0,
+        "reference_characters": 1030,
+        "punctuation_stripped_cer": 0.1407766990291262,
+        "exact": 0.2
+      },
+      "修華嚴奧旨妄盡還源觀": {
+        "n": 210,
+        "cer": 0.12145214521452145,
+        "substitutions": 356,
+        "deletions": 12,
+        "insertions": 0,
+        "reference_characters": 3030,
+        "punctuation_stripped_cer": 0.1337037037037037,
+        "exact": 0.5619047619047619
+      },
+      "八千頌般若經增上慢品": {
+        "n": 120,
+        "cer": 0.09497206703910614,
+        "substitutions": 166,
+        "deletions": 4,
+        "insertions": 0,
+        "reference_characters": 1790,
+        "punctuation_stripped_cer": 0.10179640718562874,
+        "exact": 0.6416666666666667
+      },
+      "十二國": {
+        "n": 720,
+        "cer": 0.10369733447979364,
+        "substitutions": 1194,
+        "deletions": 9,
+        "insertions": 3,
+        "reference_characters": 11630,
+        "punctuation_stripped_cer": 0.1141747572815534,
+        "exact": 0.48055555555555557
+      },
+      "天盛律令節親門": {
+        "n": 40,
+        "cer": 0.19375,
+        "substitutions": 90,
+        "deletions": 2,
+        "insertions": 1,
+        "reference_characters": 480,
+        "punctuation_stripped_cer": 0.19375,
+        "exact": 0.525
+      },
+      "妙法蓮華心經": {
+        "n": 10,
+        "cer": 0.0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 110,
+        "punctuation_stripped_cer": 0.0,
+        "exact": 1.0
+      },
+      "妙法蓮華經": {
+        "n": 60,
+        "cer": 0.12790697674418605,
+        "substitutions": 110,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 860,
+        "punctuation_stripped_cer": 0.12790697674418605,
+        "exact": 0.3333333333333333
+      },
+      "孫子兵法三家注": {
+        "n": 100,
+        "cer": 0.123841059602649,
+        "substitutions": 186,
+        "deletions": 0,
+        "insertions": 1,
+        "reference_characters": 1510,
+        "punctuation_stripped_cer": 0.13260869565217392,
+        "exact": 0.48
+      },
+      "彌勒上生經御製發願文": {
+        "n": 10,
+        "cer": 0.1357142857142857,
+        "substitutions": 19,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 140,
+        "punctuation_stripped_cer": 0.15,
+        "exact": 0.7
+      },
+      "志公大師十二時歌注解": {
+        "n": 70,
+        "cer": 0.24181818181818182,
+        "substitutions": 133,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 550,
+        "punctuation_stripped_cer": 0.2462962962962963,
+        "exact": 0.2
+      },
+      "慈孝傳": {
+        "n": 460,
+        "cer": 0.14439746300211417,
+        "substitutions": 675,
+        "deletions": 5,
+        "insertions": 3,
+        "reference_characters": 4730,
+        "punctuation_stripped_cer": 0.14439746300211417,
+        "exact": 0.4282608695652174
+      },
+      "慈悲道場懺法": {
+        "n": 40,
+        "cer": 0.1647887323943662,
+        "substitutions": 116,
+        "deletions": 0,
+        "insertions": 1,
+        "reference_characters": 710,
+        "punctuation_stripped_cer": 0.18064516129032257,
+        "exact": 0.2
+      },
+      "慈悲道場懺法序": {
+        "n": 50,
+        "cer": 0.15846153846153846,
+        "substitutions": 102,
+        "deletions": 0,
+        "insertions": 1,
+        "reference_characters": 650,
+        "punctuation_stripped_cer": 0.18070175438596492,
+        "exact": 0.42
+      },
+      "拔濟苦難陀羅尼經": {
+        "n": 30,
+        "cer": 0.1318181818181818,
+        "substitutions": 56,
+        "deletions": 1,
+        "insertions": 1,
+        "reference_characters": 440,
+        "punctuation_stripped_cer": 0.1380952380952381,
+        "exact": 0.23333333333333334
+      },
+      "維摩詰經": {
+        "n": 530,
+        "cer": 0.11113989637305699,
+        "substitutions": 845,
+        "deletions": 10,
+        "insertions": 3,
+        "reference_characters": 7720,
+        "punctuation_stripped_cer": 0.12206095791001452,
+        "exact": 0.5924528301886792
+      },
+      "聖六字增壽大明陀羅尼經": {
+        "n": 30,
+        "cer": 0.09772727272727273,
+        "substitutions": 43,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_characters": 440,
+        "punctuation_stripped_cer": 0.09772727272727273,
+        "exact": 0.6
+      },
+      "華嚴經": {
+        "n": 600,
+        "cer": 0.1,
+        "substitutions": 956,
+        "deletions": 14,
+        "insertions": 2,
+        "reference_characters": 9720,
+        "punctuation_stripped_cer": 0.09989711934156378,
+        "exact": 0.5566666666666666
+      },
+      "論語": {
+        "n": 660,
+        "cer": 0.11758241758241758,
+        "substitutions": 626,
+        "deletions": 13,
+        "insertions": 3,
+        "reference_characters": 5460,
+        "punctuation_stripped_cer": 0.12836438923395446,
+        "exact": 0.5515151515151515
+      },
+      "貞觀政要": {
+        "n": 40,
+        "cer": 0.19032258064516128,
+        "substitutions": 116,
+        "deletions": 2,
+        "insertions": 0,
+        "reference_characters": 620,
+        "punctuation_stripped_cer": 0.20357142857142857,
+        "exact": 0.4
+      },
+      "類林": {
+        "n": 1450,
+        "cer": 0.13450264296011533,
+        "substitutions": 2767,
+        "deletions": 30,
+        "insertions": 2,
+        "reference_characters": 20810,
+        "punctuation_stripped_cer": 0.13450264296011533,
+        "exact": 0.4241379310344828
+      }
+    }
+  }
+}

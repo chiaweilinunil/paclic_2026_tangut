@@ -1,15 +1,29 @@
+# --- Corpus transcriptions ---------------------------------------------
+# Not redistributed here; see text/README.md.
+text/*.txt
+
 # --- Generated dataset -------------------------------------------------
-# ~24k synthetic renderings (~600 MB). Regenerate from dataset/build_config.json.
-dataset/images/
-dataset/lines.jsonl
-dataset/**/metadata.jsonl
+# 23,464 renderings, ~616 MB: distributed as a release asset, not in git.
+dataset/synthetic/images/**/*.png
+dataset/synthetic/preview/
+# Labels ship as images/<split>/metadata.jsonl (HuggingFace imagefolder).
+# manifest.csv duplicates them and adds per-character boxes; rebuilt locally.
+dataset/synthetic/manifest.csv
+dataset/synthetic/lines.jsonl
+dataset/synthetic/charset.tsv
 
 # --- Model artifacts ---------------------------------------------------
-models/
-*.pt
-*.pth
+# Checkpoints: crnn_ctc.pt is 189 MB, past GitHub's 100 MB per-file limit.
+# Distributed as a release asset; the vocabularies are small and do ship.
+models/**/*.pt
+models/**/*.pth
+!models/**/vocab.json
 *.ckpt
 *.onnx
+
+# --- Error analysis ----------------------------------------------------
+# Confusion tables ship; the per-pair example dumps are ~9 MB and rebuildable.
+error_analysis/*.json
 
 # --- Python ------------------------------------------------------------
 __pycache__/

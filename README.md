@@ -1,75 +1,71 @@
 # TangutLines
 
-Dataset builder, baselines and evaluation for line-level Tangut OCR.
+Dataset, baselines, and evaluation tools for line-level Tangut OCR, released with our PACLIC 2026 paper.
 
-## Layout
+## Dataset
 
-    text/                 corpus transcriptions, one *.txt per work 
-    data/                 TangutSources.txt, the Unicode input for labels
-    dataset/synthetic/    generated images and labels (imagefolder metadata)
-    dataset/real/         transcribed manuscript line crops
-    models/               checkpoint vocabularies (weights: release asset)
-    eval/                 released predictions and scores
-    src/build_dataset/    renderer and corpus pipeline
-    src/crnn_ctc/         CRNN–CTC baseline
-    src/svtr_ctc/         SVTR–CTC baseline
-    src/evaluate.py       scorer
-    src/error_analysis.py character confusions -> error_analysis/
-    error_analysis/       confusion tables (TSV) and full pairs (JSON)
+TangutLines contains:
 
-## Requirements
+- **Synthetic:** 23,464 images rendered from 8,612 lines across 29 works, five typefaces, and horizontal and vertical layouts.
+- **Real:** 1,132 manuscript line crops from *妙法蓮華經* and *維摩詰經*, including 607 transcribed lines.
 
-    pip install torch torchvision pillow numpy opencv-python fonttools tqdm
+See [`dataset/dataset_card.md`](dataset/dataset_card.md) for the dataset structure, statistics, and limitations.
 
-Rendering also needs the five Tangut fonts installed locally; they are
-third-party and are not redistributed here. `build_dataset.py --list-fonts`
-reports what it can find, and `build_config.json` records a SHA-256 digest of
-each font actually used.
+## Repository
 
-## End to end
+```text
+dataset/         labels and real manuscript crops
+src/             dataset builder, OCR baselines, and evaluation tools
+models/          model vocabularies (checkpoints are release assets)
+eval/            predictions and evaluation results
+error_analysis/  character-confusion tables
+data/            Unicode Tangut character data
+```
 
-Every command is run from this directory and defaults to the paths above.
+The synthetic images and model checkpoints are distributed through this repository's GitHub Releases because of their size. Corpus transcriptions and third-party Tangut fonts are not redistributed.
 
-    # 1. render the dataset (needs text/ populated; see text/README.md)
-    python src/build_dataset/build_dataset.py
+## Setup
 
-    # 2. train — defaults are the settings the paper reports
-    python src/crnn_ctc/train.py
-    python src/svtr_ctc/train.py
+```bash
+pip install torch torchvision pillow numpy opencv-python fonttools tqdm
+```
 
-    # 3. decode the test split
-    python src/crnn_ctc/predict.py \
-        --checkpoint models/crnn_ctc/best.pt \
-        --output eval/crnn_ctc/test_predictions.jsonl
+Dataset generation requires the source corpus as UTF-8 `.txt` files in `text/` and locally installed Tangut fonts. To inspect detected fonts:
 
-    # 4. score
-    python src/evaluate.py \
-        --predictions eval/crnn_ctc/test_predictions.jsonl \
-        --json-out eval/crnn_ctc/test_results.json
+```bash
+python src/build_dataset/build_dataset.py --list-fonts
+```
 
-    # 5. character confusions, written to error_analysis/
-    python src/error_analysis.py --predictions eval/crnn_ctc/test_predictions.jsonl
+## Usage
 
-To score the released checkpoints without retraining, download them from the
-release assets into `models/<baseline>/`, then skip step 2 and pass
-`--checkpoint models/crnn_ctc/crnn_ctc.pt` in step 3. The weights are 189 MB
-(CRNN--CTC) and 31 MB (SVTR--CTC), so they are not stored in git; each
-`vocab.json` is, since it is what maps class indices back to characters.
+Run all commands from the repository root.
 
-Training writes `best.pt` and `last.pt` to `models/<baseline>/`; `--resume`
-continues from `last.pt`, so an interrupted run can be re-issued unchanged.
+```bash
+# Build the synthetic dataset
+python src/build_dataset/build_dataset.py
 
-## Labels
+# Train the baselines
+python src/crnn_ctc/train.py
+python src/svtr_ctc/train.py
 
-Labels ship as `dataset/synthetic/images/<split>/metadata.jsonl`, one JSON object
-per image, which is the HuggingFace `imagefolder` layout:
+# Predict with released checkpoints
+python src/crnn_ctc/predict.py --checkpoint models/crnn_ctc/crnn_ctc.pt --output eval/crnn_ctc/test_predictions.jsonl
+python src/svtr_ctc/predict.py --checkpoint models/svtr_ctc/svtr_ctc.pt --output eval/svtr_ctc/test_predictions.jsonl
 
-    from datasets import load_dataset
-    load_dataset("imagefolder", data_dir="dataset/synthetic/images")
+# Evaluate and analyze errors
+python src/evaluate.py --predictions eval/crnn_ctc/test_predictions.jsonl --json-out eval/crnn_ctc/test_results.json
+python src/error_analysis.py --predictions eval/crnn_ctc/test_predictions.jsonl
+```
 
+The dataset build is deterministic with the default seed. Build parameters are recorded in `dataset/synthetic/build_config.json`.
 
-## Reproducibility
+## Results
 
-`dataset/build_config.json` records the seed, every build parameter, and SHA-256
-digests of each corpus file, each font and each generator source file. The build
-is deterministic given the seed.
+Results on the 7,800-image synthetic test split:
+
+| Model | CER | Exact-line accuracy |
+| --- | ---: | ---: |
+| CRNN-CTC | 12.40% | 48.62% |
+| SVTR-CTC | 10.88% | 48.69% |
+
+Detailed results and released predictions are available in [`eval/`](eval/).
